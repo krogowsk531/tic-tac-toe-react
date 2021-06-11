@@ -1,14 +1,25 @@
 import React from 'react';
 import { Component } from 'react'
+import './Login.css';
 
 class Login extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      
-    }
+  state = {
+    player1: '', 
+    player2: '',
   }
   
+  handleChange = (event) => {
+    console.log(event.target.value)
+    
+    let player = event.target.id;
+    this.setState({ [player]: event.target.value })
+  }
+  
+  handleClick = (event) => {
+    event.preventDefault();
+    const { player1, player2 } = this.state;
+    this.props.names(player1, player2);
+  }
   render() {
     return (
       <div className='wrapper'>
