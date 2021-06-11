@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.title {
+  width: 30%;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 70%;
+}
