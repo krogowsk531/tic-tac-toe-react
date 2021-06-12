@@ -1,0 +1,47 @@
+#tile0 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tile1 {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tile2 {
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tile3 {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tile4 {
+  border: 5px solid black;
+}
+
+#tile5 {
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tile6 {
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+#tile7 {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+#tile8 {
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
