@@ -1,6 +1,8 @@
 import React from 'react';
 import { Component } from 'react'
 import Board from '../Board/Board'
+import './Game.css';
+
 
 class Game extends Component {
   state = {
