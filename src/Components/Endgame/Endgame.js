@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react'
-import './Login.css';
+import './Endgame.css';
 
 
 class Endgame extends Component {

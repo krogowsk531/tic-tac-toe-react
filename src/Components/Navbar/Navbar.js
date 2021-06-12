@@ -5,7 +5,7 @@ import './Navbar.css';
 
 class Navbar extends Component {
   render() {
-    const { player1, player, ties, userName1, userName2 } = this.props;
+    const { player1, player2, ties, userName1, userName2 } = this.props;
     return (
       <div className='navbar'>
         <div className='title'>
