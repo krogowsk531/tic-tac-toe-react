@@ -1,3 +1,22 @@
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+button, input {
+  overflow: visible;
+}
+
+.btn {
+  border-radius: .25rem;
+  height: 2.5em;
+  border: 1px solid transparent;
+  background: #5D7FA3;
+  font-weight: 500;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -18,3 +37,23 @@
   width: 300px;
   box-shadow: 6px 6px 5px gray;
 }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #5D7FA3;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
