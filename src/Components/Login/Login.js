@@ -9,8 +9,6 @@ class Login extends Component {
   }
   
   handleChange = (event) => {
-    console.log(event.target.value)
-    
     let player = event.target.id;
     this.setState({ [player]: event.target.value })
   }

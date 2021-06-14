@@ -19,7 +19,7 @@ class Board extends Component {
       this.play(tile)
     }
     
-    let allTiles = document.getElementByClassName('not-played');
+    let allTiles = document.getElementsByClassName('not-played');
     if (allTiles.length < 1) {
       handleScore('ties');
       endgame(true);
@@ -31,24 +31,21 @@ class Board extends Component {
     const { player1, player2, turn, handleScore, endgame } = this.props;
     tile.classList.remove('not-played');
     if (player1) {
-      tile.classList.remove('not-played');
-      if (player1) {
-        tile.innerHTML = 'x'
-        turn('player1', false, 'player2', true)
-        if (this.diagonal('x') || this.row('x') || this.column('x')) {
-          handleScore('player1');
-          endgame(true);
-          this.reset();
-        }
+      tile.innerHTML = 'x';
+      turn("player1", false, "player2", true)
+      if (this.diagonal('x') || this.row('x') || this.column('x')) {
+        handleScore('player1');
+        endgame(true);
+        this.reset();
       }
-      if (player2) {
-        tile.innerHTML = 'o';
-        turn('player2', false, 'player1', true);
-        if (this.diagonal('o') || this.row('o') || this.column('o')) {
-          handleScore('player2');
-          endgame(true);
-          this.reset();
-        }
+    }
+    if (player2) {
+      tile.innerHTML = 'o';
+      turn("player2", false, "player1", true);
+      if (this.diagonal('o') || this.row('o') || this.column('o')) {
+        handleScore('player2')
+        endgame(true)
+        this.reset();
       }
     }
   }
@@ -123,7 +120,7 @@ class Board extends Component {
     if (column1[0] === play && column1[1] === play && column1[2] === play) {
       return true;
     }
-    if (column2[0] === play && column2[1] === play && column3[2] === play) {
+    if (column2[0] === play && column2[1] === play && column2[2] === play) {
       return true;
     }
     if (column3[0] === play && column3[1] === play && column3[2] === play) {
@@ -146,7 +143,7 @@ class Board extends Component {
         {this.generateTiles().map((element, i) => {
           return (
             <div
-              id={`tiles${i}`}
+              id={`tile${i}`}
               key={i}
               className={element}
               onClick={this.handleClick}

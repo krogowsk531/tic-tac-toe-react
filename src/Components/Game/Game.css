@@ -1,3 +1,7 @@
+p {
+  font-size: 35px;
+}
+
 .game {
   display: flex;
   justify-content: center;

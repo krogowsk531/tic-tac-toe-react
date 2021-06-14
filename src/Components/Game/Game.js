@@ -23,7 +23,7 @@ class Game extends Component {
     const { userName1, userName2, endgame } = this.props
     return (
       <div className='game'>
-        <p>It's {player1 ? userName1: userName2}'s turn </p>
+        <p>It's {player1 ? userName1 : userName2}'s Turn </p>
         <Board
           turn={this.handleTurn}
           player1={player1}

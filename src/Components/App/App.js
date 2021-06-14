@@ -5,7 +5,6 @@ import Game from '../Game/Game';
 import './App.css';
 import Login from '../Login/Login';
 import Endgame from '../Endgame/Endgame';
-import Board from '../Board/Board'
 
 class App extends Component {
   state = {
@@ -72,7 +71,6 @@ class App extends Component {
           endgame={this.handleEndgame}
           handleScore={this.handleScore}
         />
-        <Board />
       </div>
     )
   }
