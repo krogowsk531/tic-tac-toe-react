@@ -1,62 +1,80 @@
-*, ::after, ::before {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.board, .game {
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.board {
+  /* min-height: 12vh;
+  width: 45%; */
+  display: grid;
+  width: 300px;
+  height: 300px;
+  grid-template-columns: auto auto auto;
+}
+
+.tile {
+  color: #5D7FA3;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 5em;
 }
 
-.game {
-  glex-direction: column;
-  height: 80vh;
-}
 
 #tile0 {
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #tile1 {
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #tile2 {
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #tile3 {
-  border-top: 5px solid black;
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #tile4 {
-  border: 5px solid black;
+  border: 3px solid black;
 }
 
 #tile5 {
-  border-top: 5px solid black;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #tile6 {
-  border-right: 5px solid black;
-  border-top: 5px solid black;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
 }
 
 #tile7 {
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  border-top: 5px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
 }
 
 #tile8 {
-  border-left: 5px solid black;
-  border-top: 5px solid black;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
 }

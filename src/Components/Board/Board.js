@@ -130,7 +130,7 @@ class Board extends Component {
   }
   
   reset = () => {
-    let allTiles = document.getElementByClassName('tile');
+    let allTiles = document.getElementsByClassName('tile');
     for (let i = 0; i < allTiles.length; i++) {
       allTiles[i].innerHTML = '';
       allTiles[i].classList.add('not-played')

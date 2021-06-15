@@ -3,12 +3,11 @@
 }
 
 .board, .game {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .game {
-  glex-direction: column;
+  flex-direction: column;
   height: 80vh;
 }
