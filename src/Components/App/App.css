@@ -1,1 +1,14 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 
+.board, .game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  glex-direction: column;
+  height: 80vh;
+}
